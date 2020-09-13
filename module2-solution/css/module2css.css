@@ -1,0 +1,86 @@
+* {	
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+ }
+
+h1 {
+	margin-bottom: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+body {
+	background-color: lightgreen;
+	}		
+
+.boxed {
+	background-color: gray;
+	border: 1px solid black;
+    color: white;
+    width: 27%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name {
+    width: 30%;
+    float: right;
+    background-color: black;
+    text-align: center;
+    padding: 10px 5 px;
+    border: solid 1 px darkgray;
+    color: white;
+}
+
+.dish-description {
+    padding: 30px 10px;
+}
+
+footer {
+    padding-top: 80px;
+    color: black;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+    .name {
+        font-size: 16px;
+    }
+
+    .boxed {
+        margin: 0 10px;
+        width: 27%;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) and (min-width: 767px) {
+    .name {
+        font-size: 14px;
+    }
+
+    .boxed {
+        margin: 10px 0;
+        width: 50%;
+
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .name {
+        font-size: 12px;
+    }
+
+    .boxed {
+        margin: 10px 0;
+        width: 80%;
+
+    }
+}
+
